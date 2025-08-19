@@ -1,0 +1,17 @@
+要在meddy上工作，执行cd /meddy/zhangxw66/
+主要有三个文件夹：/Analysis/ /Data/ /figures/
+
+source /southern/rbarkan/data/SWC2km/module_load_2024_meddy
+
+
+
+## 在服务器上启动lab
+jupyter lab --no-browser --port=8889
+
+# 然后在本地cmd打开：
+ssh -N -f -L localhost:8888:localhost:8889 zhangxw66@meddy.tau.ac.il
+http://localhost:8888/输入token（在服务器上有写）
+
+
+## 启动notebook (没安装notebook)
+jupyter notebook --no-browser --port=8889
